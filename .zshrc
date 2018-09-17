@@ -1,3 +1,7 @@
+#Aliases
+alias zshsource="source ~/.zshrc"
+alias zshconfig="subl ~/.zshrc & disown"
+
 # Powerlevel9k theme configs
 POWERLEVEL9K_MODE='nerdfont-complete'
 
@@ -22,6 +26,7 @@ POWERLEVEL9K_VCS_STASH_ICON=$'\uF48D '
 POWERLEVEL9K_VCS_TAG_ICON=$'\uF673 '
 POWERLEVEL9K_VCS_INCOMING_CHANGES_ICON=$'\uE340 '
 POWERLEVEL9K_VCS_OUTGOING_CHANGES_ICON=$'\uE353 '
+POWERLEVEL9K_LOCK_ICON=$'\uF456'
 
 # Load zgen
 source "${HOME}/.zgen/zgen.zsh"
