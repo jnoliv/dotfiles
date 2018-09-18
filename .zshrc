@@ -1,6 +1,7 @@
 #Aliases
 alias zshsource="source ~/.zshrc"
 alias zshconfig="subl ~/.zshrc & disown"
+alias ding="paplay /usr/share/sounds/freedesktop/stereo/complete.oga & disown"
 
 # Powerlevel9k theme configs
 POWERLEVEL9K_MODE='nerdfont-complete'
