@@ -1,0 +1,43 @@
+[add]
+	ignoreErrors = true
+[apply]
+	whitespace = nowarn
+[branch]
+	sort = refname
+[clean]
+	requireForce = false
+[completion]
+	commands = checkout,reset
+[color]
+	ui = always
+
+[color "status"]
+	added = green
+	changed = red
+	untracked = yellow
+
+[core]
+	autocrlf = false
+	commentChar = $
+	editor = subl -n -w
+	whitespace = space-before-tab,indent-with-non-tab,-tab-in-indent,trailing-space,-cr-at-eol,tabwidth=4
+
+[diff]
+	algorithm = minimal
+	tool = p4merge
+[difftool]
+	prompt = false
+
+[grep]
+	fullName = true
+	lineNumber = true
+	threads = 7
+
+[log]
+	abbrevCommit = true
+	showRoot = true
+
+[merge]
+	tool = p4merge
+[mergetool]
+	prompt = false
