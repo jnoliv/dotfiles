@@ -1,6 +1,7 @@
 #Aliases
 alias zshsource="source ~/.zshrc"
 alias zshconfig="subl ~/.zshrc & disown"
+alias gitconfig="subl ~/.gitconfig & disown"
 alias ding="paplay /usr/share/sounds/freedesktop/stereo/complete.oga & disown"
 
 # Powerlevel9k theme configs
