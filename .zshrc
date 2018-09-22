@@ -61,3 +61,6 @@ PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 # QT Toolchain paths
 QT_SDK_5_6_3=/home/jnoliveira/Programs/Qt5.6.3/5.6.3/gcc_64
 PATH=$PATH:/home/jnoliveira/Programs/Qt5.6.3/5.6.3/gcc_64/bin
+
+# Add script repository to path
+PATH=$PATH:~/scripts
