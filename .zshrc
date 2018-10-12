@@ -40,6 +40,8 @@ if ! zgen saved; then
   zgen oh-my-zsh
   zgen oh-my-zsh plugins/command-not-found
 
+  zgen load zsh-users/zsh-completions.git
+
   # Apparently these two must be at the end in this order
   zgen load zsh-users/zsh-syntax-highlighting.git
   zgen load zsh-users/zsh-autosuggestions.git

@@ -1,13 +1,18 @@
 [add]
 	ignoreErrors = true
+
 [apply]
 	whitespace = nowarn
+
 [branch]
 	sort = refname
+
 [clean]
 	requireForce = false
+
 [completion]
 	commands = checkout,reset
+
 [color]
 	ui = always
 
@@ -19,7 +24,7 @@
 [core]
 	autocrlf = false
 	commentChar = $
-	editor = subl -n -w
+	editor = subl -w
 	whitespace = space-before-tab,indent-with-non-tab,-tab-in-indent,trailing-space,-cr-at-eol,tabwidth=4
 
 [diff]
@@ -46,3 +51,9 @@
 	keepTemporaries = false
 	prompt = false
 	writeToTemp = true
+
+[pull]
+	rebase = true
+
+[rebase]
+	autoStash = true
