@@ -1,0 +1,10 @@
+# Enable coloured ls and grep output.
+alias ls='ls --color=auto'
+alias ll='ls --almost-all --color=auto --group-directories-first --human-readable -l --time-style=long-iso -v'
+
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# Make shred remove documents by default.
+alias shred='shred --iterations=3 --remove=wipesync'
