@@ -42,5 +42,10 @@ source "$ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" # 
 # Prompt.
 source "$ZDOTDIR/jnoliv.zsh-theme"
 
+# Use gpg-agent for SSH.
+# https://opensource.com/article/19/4/gpg-subkeys-ssh
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+gpgconf --launch gpg-agent
+
 # Uncomment to allow profilling using zprof.
 #zmodload zsh/zprof
