@@ -49,3 +49,5 @@ gpgconf --launch gpg-agent
 
 # Uncomment to allow profilling using zprof.
 #zmodload zsh/zprof
+
+[ -f "/home/jnoliv/.ghcup/env" ] && source "/home/jnoliv/.ghcup/env" # ghcup-env
