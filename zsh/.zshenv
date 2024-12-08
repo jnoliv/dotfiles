@@ -5,5 +5,10 @@ export XDG_CACHE_HOME=$HOME/.cache;       mkdir -p "$XDG_CACHE_HOME"
 export XDG_CONFIG_HOME=$HOME/.config;     mkdir -p "$XDG_CONFIG_HOME"
 export XDG_STATE_HOME=$HOME/.local/state; mkdir -p "$XDG_STATE_HOME"
 
+export PATH="$PATH:$HOME/.local/bin";     mkdir -p "$HOME/.local/bin"
+
+mkdir -p "$XDG_DATA_HOME/applications"
+mkdir -p "$XDG_DATA_HOME/icons"
+
 # Zsh
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"

@@ -1,6 +1,6 @@
 # Install Zsh and make it default shell.
 pkexec apt install -y zsh
-pkexec chsh -s $(which zsh)
+chsh -s $(which zsh)
 
 # Set up fonts directory.
 mkdir -p ~/.fonts ~/.local/share/fonts
