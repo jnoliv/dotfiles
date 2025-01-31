@@ -151,7 +151,7 @@ update_git_segment () {
     UPDATE_GIT=
 
     # Set background colour.
-    if git diff-index --quiet HEAD --; then
+    if git rev-parse --quiet --verify HEAD > /dev/null && git diff-index --quiet HEAD --; then
         psvar[6]="$GIT_BG_CLEAN"
     else
         psvar[6]="$GIT_BG_DIRTY"
