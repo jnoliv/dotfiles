@@ -47,7 +47,13 @@ source "$ZDOTDIR/jnoliv.zsh-theme"
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 gpgconf --launch gpg-agent
 
-# Uncomment to allow profilling using zprof.
-#zmodload zsh/zprof
+# Add Go binary directories to path if installed.
+if [ -d /usr/local/go/bin ]; then
+    export PATH=$PATH:/usr/local/go/bin
+    export PATH="$PATH:$(go env GOPATH | tr -d '\n')/bin"
+fi
 
 [ -f "/home/jnoliv/.ghcup/env" ] && source "/home/jnoliv/.ghcup/env" # ghcup-env
+
+# Uncomment to allow profilling using zprof.
+#zmodload zsh/zprof
