@@ -1,0 +1,1 @@
+ln -fns -T "$SCRIPT_DIR/nano" ~/.config/nano

@@ -1,0 +1,5 @@
+set autoindent
+set linenumbers
+set smarthome
+set softwrap
+set tabsize 4
