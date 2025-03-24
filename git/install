@@ -1,5 +1,5 @@
 # Install git
-pkexec apt install -y git
+sudo apt-get install -y git
 
 # Create symbolic links to git dotfiles.
 mkdir -p ~/.config/git/
